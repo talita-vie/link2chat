@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Link2Chat - WhatsApp Helper",
+  "version": "1.0.0",
+  "description": "Quick WhatsApp link generator to start chats without saving contacts",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open Link2Chat"
+  },
+  "permissions": ["storage"]
+}
