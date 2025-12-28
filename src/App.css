@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f0f2f5;
+  color: #111827;
+}
+
+.container {
+  width: 320px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #111827;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.char-counter {
+  font-size: 11px;
+  color: #9ca3af;
+  font-variant-numeric: tabular-nums;
+}
+
+.char-counter.limit-exceeded {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.2s ease;
+  background: white;
+  color: #111827;
+}
+
+input:focus, textarea:focus {
+  border-color: #00a884;
+  box-shadow: 0 0 0 3px rgba(0, 168, 132, 0.15);
+}
+
+/* Estilo para erro de validação */
+input[aria-invalid="true"] {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.error-message {
+  font-size: 12px;
+  color: #dc2626;
+  background-color: #fef2f2;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #fee2e2;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.submit-button {
+  background-color: #00a884;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #008f6f;
+  transform: translateY(-1px);
+}
+
+.submit-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Animação suave para o erro */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
