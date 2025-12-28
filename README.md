@@ -46,7 +46,7 @@ This project demonstrates scalable frontend architecture and DOM manipulation wi
 
 If you are a developer or client wanting to test the code:
 
-1.  Clone the repo: `git clone https://github.com/SEU-USUARIO/link2chat.git`
+1.  Clone the repo: `git clone https://github.com/talita-vie/link2chat.git`
 2.  Install dependencies: `npm install`
 3.  Build the extension: `npm run build`
 4.  Load the `dist` folder into Chrome Extensions in Developer Mode.
